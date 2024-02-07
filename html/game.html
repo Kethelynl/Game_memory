@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/jogo.css">
+
+    <script defer src="../java/modalXO.js"></script>
+   
+    <title>Jogo da velha</title>
+</head>
+<body>
+    
+   <main class="flex">
+        
+    <section id="modal-princial" class="modal" aria-disabled="true" >
+        <section id="modal-princial"class="modal-header"  >
+            <div class="XYtitulo">
+             <h3>Escolha Uma Opção</h3>
+             <span class="play"></span>
+            </div>
+            <form class="XY">
+                <div class="botao-XY-principal">
+                   <button type="button"  id="btX" class="X">X</button>
+                   <button type="button"  id="btO"  class="O">O</button>
+                </div>
+                <form>
+                    <button  type="button" id="atributo"  class="button-play" disabled>Jogar</button>
+                </form>
+            </form>
+
+        </section>
+
+    </section>
+    
+        <header class="placar">
+            <div class="jogadores">
+                <span class="jogador1"></span>
+                <span class="jogador2"></span>
+            </div>
+            <div class="pontuacao">
+                <span class="placar1"></span>
+                <span class="placar2"></span>
+            </div>
+        </header>
+        <div class="gamer">
+            <button data-i="1"  type="button" class="botaodimensao"></button>
+            <button data-i="2"   class="botaodimensao"></button>
+            <button data-i="3"  class="botaodimensao"></button>
+            <button data-i="4"  class="botaodimensao"></button>
+            <button data-i="5"  class="botaodimensao"></button>
+            <button data-i="6"  class="botaodimensao"></button>
+            <button data-i="7"  class="botaodimensao"></button>
+            <button data-i="8"  class="botaodimensao"></button>
+            <button data-i="9"  class="botaodimensao"></button>
+        </div>
+        <div class="playervez">
+        <h2 class="currentPlayer"><h2 class="nameplayer"></h2></h2>
+        </div>
+        <section class="modal-meio">
+            <section class="modal-meioheader">
+                 <div class="vencedorpartida">
+                    <h2 class="vencedot-text">O VENCEDOR FOI:</h2>
+                    <h3 class="vencer">nome</h3>
+                    <h4 class="continuar">Deseja Continuar?</h4>
+                 </div>
+                 <form>
+                    <div class="meio-button">
+                      <button type="button"  id="sim" class="yes">SIM</button>
+                      <button type="button"  id="Não"  class="no">NÃO</button>
+                    </div>
+                 </form>
+            </section>
+        </section>
+
+        <section class="model-final">
+            <section class="final-header">
+                <h2 class="vencefinal">O vencedor foi</h2>
+                <h3 class="win">win</h3>
+                <h4 class="pontos">00</h4>
+
+                <form>
+                    <button type="button" id="voltar" class="voltarin">VOLTAR</button>
+                </form>
+            </section>
+    
+        </section>
+   </main> 
+       
+</body>
+</html>
